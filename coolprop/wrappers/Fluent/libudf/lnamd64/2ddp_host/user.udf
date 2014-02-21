@@ -1,0 +1,4 @@
+CSOURCES= properties.c
+HSOURCES=
+FLUENT_INC=/home/ansys_inc/v145/fluent
+GPU_SUPPORT=off

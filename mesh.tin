@@ -1,0 +1,75 @@
+// tetin file version 1.1
+// written by ICEM CFD - version 14.0 on Fri Feb 21 10:51:56 2014
+
+set_triangulation_tolerance 0.001
+# In ICEM CFD 4.2 the family_boco file is no longer tied to tetin
+# read_family_boco family_boco
+define_family GEOM color 16663866
+define_family INLET color 16663101
+define_family WALL color 3604041
+define_family AXIS color 6944563
+define_family OUTLET color 3387852
+define_family FLUID color 12109107
+
+prescribed_point 0 0 0 family GEOM name pnt.04
+prescribed_point 0.15000000596046 0 0 family GEOM name pnt.05
+prescribed_point 0.15000000596046 0.008500000461936 0 family GEOM name pnt.06
+prescribed_point 0 0.008500000461936 0 family GEOM name pnt.07
+prescribed_point 0.15000000596046 0.008500000461936 0 family FLUID name FLUID.7
+prescribed_point 0.15000000596046 0 0 family FLUID name FLUID.8
+prescribed_point 0 0 0 family FLUID name FLUID.9
+prescribed_point 0 0.008500000461936 0 family FLUID name FLUID.10
+define_curve family INLET tetra_size 1e+10 name crv.00 vertex1 pnt.07 vertex2 pnt.04
+bspline
+2,2,0
+0,0,1,1
+0,0.0085000005,0
+0,0,0
+define_curve family WALL tetra_size 1e+10 name crv.01 vertex1 pnt.07 vertex2 pnt.06
+bspline
+2,2,0
+0,0,1,1
+0,0.0085000005,0
+0.15000001,0.0085000005,0
+define_curve family AXIS tetra_size 1e+10 name crv.02 vertex1 pnt.04 vertex2 pnt.05
+bspline
+2,2,0
+0,0,1,1
+0,0,0
+0.15000001,0,0
+define_curve family OUTLET tetra_size 1e+10 name crv.03 vertex1 pnt.06 vertex2 pnt.05
+bspline
+2,2,0
+0,0,1,1
+0.15000001,0.0085000005,0
+0.15000001,0,0
+define_surface name srf.00 family FLUID tetra_size 1e+10
+trim_surface n_loops 1
+loop n_curves 4
+coedge 3dcurve   crv.03
+polyline n_points 2
+0,0
+1,0
+coedge 3dcurve - crv.02
+polyline n_points 2
+1,0
+1,1
+coedge 3dcurve - crv.00
+polyline n_points 2
+1,1
+0,1
+coedge 3dcurve   crv.01
+polyline n_points 2
+0,1
+0,0
+bspline
+2,2,2,2,0
+0,0,1,1
+0,0,1,1
+0.15000001,0.0085000005,0
+0.15000001,0,0
+0,0.0085000005,0
+0,0,0
+affix 0
+define_model 1e+10 reference_size 1
+return

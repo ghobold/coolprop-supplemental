@@ -1,0 +1,16 @@
+2014/02/14 16:03:02    INFO            Not connected to a local port.
+2014/02/14 16:03:02    NEW_CONNECTION  
+		Connected to license server: 2325@avserver.lepten.ufsc.br. 
+		    ANSYSLI_SERVERS: 2325@avserver.lepten.ufsc.br 
+		    FLEXlm Servers: 1055@avserver.lepten.ufsc.br
+2014/02/14 16:03:02    CHECKOUT        aa_r_cfd                 14.5 (2012.0814)             1/1/1/5              1/2/2194/2194      22178:FLUENT_SOLVER:hobold@localhost.localdomain:linx64                  67888:127.0.0.1      
+2014/02/14 16:03:02    CHECKOUT        SHARE_LOCKER             14.5 (2012.0814)             1/1/1/1              1/2/2194/2194      22178:FLUENT_SOLVER:hobold@localhost.localdomain:linx64                  67888:127.0.0.1      
+2014/02/14 16:03:02    CHECKOUT        FLUENT_SOLVER            14.5 (2012.0814)             1/1/1/1              1/2/2194/2194      22178:FLUENT_SOLVER:hobold@localhost.localdomain:linx64                  67888:127.0.0.1      
+2014/02/14 16:04:25    INFO            Not connected to a local port.
+2014/02/14 16:04:25    NEW_CONNECTION  
+		Connected to license server: 2325@avserver.lepten.ufsc.br. 
+		    ANSYSLI_SERVERS: 2325@avserver.lepten.ufsc.br 
+		    FLEXlm Servers: 1055@avserver.lepten.ufsc.br
+2014/02/14 16:04:25    CHECKOUT        aa_r_cfd                 14.5 (2012.0814)             1/1/1/5              1/2/2196/2196      23078:FLUENT_SOLVER:hobold@localhost.localdomain:linx64                  67872:127.0.0.1      
+2014/02/14 16:04:25    CHECKOUT        SHARE_LOCKER             14.5 (2012.0814)             1/1/1/1              1/2/2196/2196      23078:FLUENT_SOLVER:hobold@localhost.localdomain:linx64                  67872:127.0.0.1      
+2014/02/14 16:04:25    CHECKOUT        FLUENT_SOLVER            14.5 (2012.0814)             1/1/1/1              1/2/2196/2196      23078:FLUENT_SOLVER:hobold@localhost.localdomain:linx64                  67872:127.0.0.1      

@@ -1,0 +1,12 @@
+cd C++
+call run_example.bat
+cd ..\CSharp
+call run_example.bat
+cd ..\Java
+call run_example.bat
+cd ..\MATLAB
+call run_example.bat
+cd ..\Octave
+call run_example.bat
+cd ..\Python
+call run_example.bat

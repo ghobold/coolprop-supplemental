@@ -1,0 +1,74 @@
+/* 
+UDF TO CALCULATE FLUID PROPERTIES BASED ON THE OPEN-SOURCE 
+* THERMODYNAMIC LIBRARY COOLPROP
+*/
+
+#include "udf.h"
+
+const char* FLUID = "Air";
+
+double Props (char*, char, double, char, double, char*);
+
+/* Real gas viscosity */
+DEFINE_PROPERTY(cell_viscosity, c, t)
+{
+	real viscosity;
+	real temperature = C_T(c, t);
+	real pressure = C_P(c, t);
+	viscosity = Props((char*)"V",'T',temperature,'P',pressure/1000, (char*) FLUID);
+	return viscosity;
+}
+
+/* Real gas thermal conductivity */
+DEFINE_PROPERTY(cell_thermalConductivity, c, t)
+{
+	real thermalConductivity;
+	real temperature = C_T(c, t);
+	real pressure = C_P(c, t);
+	thermalConductivity = Props((char*)"V",'T', temperature, 'P', pressure/1000, (char*) FLUID);
+	return thermalConductivity;
+}
+
+/* Real gas density */
+DEFINE_PROPERTY(cell_density, c, t)
+{
+	real density;
+	real temperature = C_T(c, t);
+	real pressure = C_P(c, t);
+	density = Props((char*)"D",'T', temperature, 'P', pressure/1000, (char*) FLUID);
+	return density;
+}
+
+/* Real gas specific heat at constant pressure */
+DEFINE_SPECIFIC_HEAT(cell_specificHeat, temperature, Tref, enthalpy, yi)
+{
+	Domain *domain = Get_Domain(1);
+	Thread *t;
+	cell_t c;
+	real pressure;
+	real specificHeat;
+
+	thread_loop_c(t, domain)
+	{
+		begin_c_loop(c, t)
+		{
+			pressure = C_P(c, t);
+		}end_c_loop(c, t)
+	}
+	specificHeat = Props((char*)"C",'T', temperature, 'P', pressure/1000, (char*) FLUID);
+	*enthalpy = Props((char*)"H",'T', temperature, 'P', pressure/1000, (char*) FLUID);
+	return specificHeat;
+}
+
+/* Execute on demand UDF to test if the library was built correctly */
+DEFINE_ON_DEMAND(call_coolprop)
+{
+	real p, t, r;
+
+	p = 100000.0;
+	t = 300.0;
+
+	r = Props((char*)"D",'T',t,'P',p/1000,(char*) FLUID);
+
+	Message("p = %lf, t = %lf => r = %lf\n", p, t, r);
+}

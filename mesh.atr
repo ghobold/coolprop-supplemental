@@ -1,0 +1,80 @@
+# Written by ICEM CFD 14.5.7, user root, Fri Feb 21 10:51:56 AM BRT 2014
+
+begin family GEOM
+    begin solver "Fluent_V6"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "Fluent_V6"
+end family GEOM
+
+begin family INLET
+    begin solver "Fluent_V6"
+        begin bctype VELI
+            active 1
+            arg1 0 1
+        end bctype VELI
+        begin bctype color
+            active 1
+            color 16663100 1
+        end bctype color
+    end solver "Fluent_V6"
+end family INLET
+
+begin family WALL
+    begin solver "Fluent_V6"
+        begin bctype WALL
+            active 1
+            arg1 0 1
+        end bctype WALL
+        begin bctype color
+            active 1
+            color 3604040 1
+        end bctype color
+    end solver "Fluent_V6"
+end family WALL
+
+begin family AXIS
+    begin solver "Fluent_V6"
+        begin bctype AXIS
+            active 1
+            arg1 0 1
+        end bctype AXIS
+        begin bctype color
+            active 1
+            color 6944560 1
+        end bctype color
+    end solver "Fluent_V6"
+end family AXIS
+
+begin family OUTLET
+    begin solver "Fluent_V6"
+        begin bctype PRESO
+            active 1
+            arg1 0 1
+        end bctype PRESO
+        begin bctype color
+            active 1
+            color 3387850 1
+        end bctype color
+    end solver "Fluent_V6"
+end family OUTLET
+
+begin family FLUID
+    begin solver "Fluent_V6"
+        begin bctype FLUID
+            active 1
+            arg1 0 1
+        end bctype FLUID
+        begin bctype color
+            active 1
+            color 12109100 1
+        end bctype color
+    end solver "Fluent_V6"
+end family FLUID
+
+begin family VORFN
+    begin solver "Fluent_V6"
+    end solver "Fluent_V6"
+end family VORFN

@@ -1,0 +1,64 @@
+ 2014/02/21 14:21:03 
+ChartCCLObject::calcXYChart - No data exists for variable 'Density' specified in object 'Chart Line 1'.
+ 2014/02/21 14:21:03 
+ChartCCLObject::calcXYChart - No data exists for variable 'Density' specified in object 'Chart Line 3'.
+ 2014/02/21 14:21:03 
+ChartCCLObject::calcXYChart - No data exists for variable 'Density' specified in object 'Chart Line 5'.
+ 2014/02/21 14:21:03 
+ChartCCLObject::calcXYChart - No data exists for variable 'Thermal Conductivity' specified in object 'Chart Line 1'.
+ 2014/02/21 14:21:03 
+ChartCCLObject::calcXYChart - No data exists for variable 'Thermal Conductivity' specified in object 'Chart Line 3'.
+ 2014/02/21 14:21:03 
+ChartCCLObject::calcXYChart - No data exists for variable 'Thermal Conductivity' specified in object 'Chart Line 5'.
+ 2014/02/21 14:21:03 
+ChartCCLObject::calcXYChart - No data exists for variable 'Dynamic Viscosity' specified in object 'Chart Line 1'.
+ 2014/02/21 14:21:03 
+ChartCCLObject::calcXYChart - No data exists for variable 'Dynamic Viscosity' specified in object 'Chart Line 3'.
+ 2014/02/21 14:21:03 
+ChartCCLObject::calcXYChart - No data exists for variable 'Dynamic Viscosity' specified in object 'Chart Line 5'.
+ 2014/02/21 14:21:03 
+ChartCCLObject::calcXYChart - No data exists for variable 'Specific Heat Capacity At Constant Pressure' specified in object 'Chart Line 1'.
+ 2014/02/21 14:21:03 
+ChartCCLObject::calcXYChart - No data exists for variable 'Specific Heat Capacity At Constant Pressure' specified in object 'Chart Line 3'.
+ 2014/02/21 14:21:03 
+ChartCCLObject::calcXYChart - No data exists for variable 'Specific Heat Capacity At Constant Pressure' specified in object 'Chart Line 5'.
+ 2014/02/21 14:21:04 
+ChartCCLObject::calcXYChart - No data exists for variable 'Velocity' specified in object 'Chart Line 1'.
+ 2014/02/21 14:21:04 
+ChartCCLObject::calcXYChart - No data exists for variable 'Velocity' specified in object 'Chart Line 3'.
+ 2014/02/21 14:21:04 
+ChartCCLObject::calcXYChart - No data exists for variable 'Velocity' specified in object 'Chart Line 5'.
+ 2014/02/21 14:21:04 
+ContourCalcFunc::doColour - Did not get Variable Density from Geometry on periodic 1.
+ 2014/02/21 14:21:04 
+ChartCCLObject::calcXYChart - No data exists for variable 'Thermal Conductivity' specified in object 'Chart Line 1'.
+ 2014/02/21 14:21:04 
+ChartCCLObject::calcXYChart - No data exists for variable 'Thermal Conductivity' specified in object 'Chart Line 3'.
+ 2014/02/21 14:21:04 
+ChartCCLObject::calcXYChart - No data exists for variable 'Thermal Conductivity' specified in object 'Chart Line 5'.
+ 2014/02/21 14:21:04 
+ChartCCLObject::calcXYChart - No data exists for variable 'Specific Heat Capacity At Constant Pressure' specified in object 'Chart Line 1'.
+ 2014/02/21 14:21:04 
+ChartCCLObject::calcXYChart - No data exists for variable 'Specific Heat Capacity At Constant Pressure' specified in object 'Chart Line 3'.
+ 2014/02/21 14:21:04 
+ChartCCLObject::calcXYChart - No data exists for variable 'Specific Heat Capacity At Constant Pressure' specified in object 'Chart Line 5'.
+ 2014/02/21 14:21:04 
+ChartCCLObject::calcXYChart - No data exists for variable 'Dynamic Viscosity' specified in object 'Chart Line 1'.
+ 2014/02/21 14:21:04 
+ChartCCLObject::calcXYChart - No data exists for variable 'Dynamic Viscosity' specified in object 'Chart Line 3'.
+ 2014/02/21 14:21:04 
+ChartCCLObject::calcXYChart - No data exists for variable 'Dynamic Viscosity' specified in object 'Chart Line 5'.
+ 2014/02/21 14:21:04 
+ChartCCLObject::calcXYChart - No data exists for variable 'Density' specified in object 'Chart Line 1'.
+ 2014/02/21 14:21:04 
+ChartCCLObject::calcXYChart - No data exists for variable 'Density' specified in object 'Chart Line 3'.
+ 2014/02/21 14:21:04 
+ChartCCLObject::calcXYChart - No data exists for variable 'Density' specified in object 'Chart Line 5'.
+ 2014/02/21 14:21:04 
+ChartCCLObject::calcXYChart - No data exists for variable 'Velocity' specified in object 'Chart Line 1'.
+ 2014/02/21 14:21:04 
+ChartCCLObject::calcXYChart - No data exists for variable 'Velocity' specified in object 'Chart Line 3'.
+ 2014/02/21 14:21:04 
+ChartCCLObject::calcXYChart - No data exists for variable 'Velocity' specified in object 'Chart Line 5'.
+ 2014/02/21 14:21:04 
+ContourCalcFunc::doColour - Did not get Variable Density from Geometry on periodic 1.
